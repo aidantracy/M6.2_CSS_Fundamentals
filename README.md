@@ -2,23 +2,17 @@
 
 ## Overview
 
-TODO: Write a project description
+This module focuses on more advanced CSS and some of the basic fundamentals.  
+
+## Setting up
+To get started, you must have live preview enabled in vs code. 
+
+Right click on the index.html under explorer (usually on the left hand side), and select show preview. 
+Since the alert function will not work in vscode. You will need open a live browser. This can be done in the upper right hand corner and selecting show in browser. 
+From here you will see the alert function work when you click on the generate lipsum button at the bottom. 
 
 ## Sources and Credits
 
-TODO: You must credit the sources and authors of any code, libraries, or other
-assets you use in your project. If you leave this section blank, your project
-will be considered in violation of the Academic Honesty policy unless you truly
-created everything from scratch with no outside help. If you need to use a
-source that you cannot credit (e.g. a classmate's work), you must get explicit
-permission from your instructor.
+Information was pulled from the readings we did from the README for this module. 
 
-A simple bulleted list below is sufficient. For example:
-
-- Bootstrap: https://getbootstrap.com/
-- jQuery: https://jquery.com/
-- Background image: https://unsplash.com/photos/...
-- Sound effects: https://freesound.org/people/...
-- Icons: https://fontawesome.com/
-- Fonts: https://fonts.google.com/
-- etc.
+I also employed chatGPT for guidance on how to set up the tests in Qunit and how to test the alert function. 

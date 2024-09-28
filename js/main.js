@@ -2,7 +2,7 @@
  * This function returns the text of what was selected when the button is pressed. 
  */
 
-const display = () => {
+export const display = () => {
     const options = document.getElementsByName('option');
 
     let selectedValue = 'Nothing was selected'; // default if nothing was selected
@@ -16,4 +16,6 @@ const display = () => {
 
     alert(selectedValue)
   }
+  
+
   
