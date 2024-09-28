@@ -1,18 +1,19 @@
-window.onload = loaded;
-
 /**
- * Simple Function that will be run when the browser is finished loading.
+ * This function returns the text of what was selected when the button is pressed. 
  */
-function loaded() {
-    // Assign to a variable so we can set a breakpoint in the debugger!
-    const hello = sayHello();
-    console.log(hello);
-}
 
-/**
- * This function returns the string 'hello'
- * @return {string} the string hello
- */
-export function sayHello() {
-    return 'hello';
-}
+const display = () => {
+    const options = document.getElementsByName('option');
+
+    let selectedValue = 'Nothing was selected'; // default if nothing was selected
+  
+    // checks for a selected radio button then updates the value. 
+    for (let i = 0; i < options.length; i++) {
+      if (options[i].checked) {
+        selectedValue = options[i].value;
+      }
+    }
+
+    alert(selectedValue)
+  }
+  

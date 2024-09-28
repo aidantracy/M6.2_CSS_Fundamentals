@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 2px red dotted;
+  /* border: 2px red dotted; */
 }
 
 html {
@@ -10,6 +10,7 @@ html {
 body {
   margin: 0;
   background: #ccc;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 article {
@@ -41,6 +42,7 @@ h1 {
 
 /* Your CSS below here */
 
+
 /* Fallback for older browsers */
 .letter {
   background: 
@@ -48,8 +50,7 @@ h1 {
       url('/img/top-image.png') no-repeat top center,
       white;
   background-size: contain;
-  border-top: 1mm solid #333; 
-  border-bottom: 1mm solid #333;
+  border: 1mm solid rgb(185, 184, 184); 
 }
 
 /* Background for modern browsers */
@@ -58,11 +59,93 @@ h1 {
       linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent 15%, transparent 85%, rgba(0, 0, 0, 0.25)),
       url('/img/top-image.png') no-repeat top center,
       url('/img/bottom-image.png') no-repeat bottom center;
-  background-size: cover, contain, contain;
+  background-size: cover, contain, contain; /* whole background, top image, bottom image*/
   background-color: white;
-  border-top: 1mm solid #333;
-  border-bottom: 1mm solid #333;
   min-height: 100vh;
 }
 
+h1 {
+  background:
+    url("/img/logo.png") no-repeat center; /*adds background image to h1*/
+  background-size: cover;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+  border-radius: 50%; 
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 1));
+}
 
+.big-container {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px;
+  margin-top: 20px; 
+  height: 100vh; 
+  box-sizing: border-box; 
+}
+
+header {
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center; 
+  max-width: 100%; 
+}
+
+header h2, 
+header {
+  margin: 0; 
+  padding: 10px 0; 
+}
+
+header p {
+  font-size: 10px;
+}
+
+hr {
+  border: 0;
+  height: 1.5px;
+  background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,.55),rgba(0,0,0,0))
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  font-size: 11px;
+}
+
+.column {
+  flex: 1; 
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.controls button {
+  float: inline-end;
+}
+
+.controls > * {
+  margin: 5px;
+  padding: 5px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  background-color: #eeeeee;
+  border: 1px solid rgba(0, 0, 0, 0.25); 
+  border-radius: 5px; 
+  font-size: 12px; 
+}
+
+.controls button:hover {
+  background-color: #c4c1c1 ;
+}
+
+address {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+}
