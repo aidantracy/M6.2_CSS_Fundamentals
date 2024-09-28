@@ -42,14 +42,25 @@
 
                     <!-- Radio Buttons and Button -->
                     <div class="controls">
-                        <div class="select-radio">
-                          <label><input type="radio" name="option" value="paragraphs"> paragraphs</label><br>
-                          <label><input type="radio" name="option" value="words"> words</label><br>
-                          <label><input type="radio" name="option" value="bytes"> bytes</label><br>
-                          <label><input type="radio" name="option" value="lists"> lists</label><br>
-                        </div>
-                        <button onclick="display()">Generate Lorem Ipsum</button>
-                    </div>
+                      <fieldset>
+                          <!-- Radio buttons with proper labels and accessible structure -->
+                          <label for="option-paragraphs" tabindex="1">
+                              <input type="radio" id="option-paragraphs" name="option" value="paragraphs"> Paragraphs
+                          </label><br>
+                          <label for="option-words" tabindex="2">
+                              <input type="radio" id="option-words" name="option" value="words"> Words
+                          </label><br>
+                          <label for="option-bytes" tabindex="3">
+                              <input type="radio" id="option-bytes" name="option" value="bytes"> Bytes
+                          </label><br>
+                          <label for="option-lists" tabindex="4">
+                              <input type="radio" id="option-lists" name="option" value="lists"> Lists
+                          </label><br>
+                  
+                          <!-- Button for triggering the display function -->
+                          <button onclick="display()" tabindex="5">Generate Lorem Ipsum</button>
+                      </fieldset>
+                  </div>
                   </div>
             </div>
         

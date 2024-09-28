@@ -144,6 +144,10 @@ address {
   font-weight: bold;
 }
 
+fieldset {
+  border: none;
+}
+
 @media (max-width: 768px) {
   .container {
       flex-direction: column;
